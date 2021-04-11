@@ -4,7 +4,7 @@
 
       <section class="category">
         <div class="category__cat--slider" v-if="tags && tags.results && tags.results.length>0">
-          <carousel :responsive="{0:{items:20}}" :autoWidth="true" :margin="10" :autoplay="true" :nav="false" :loop="true" :dots="false" :center="true" :autoplayHoverPause="true">
+          <carousel :autoWidth="true" :margin="10" :autoplay="true" :nav="false" :loop="true" :dots="false" :center="true" :autoplayHoverPause="true">
           <div class="item" :class="{'active': index == i}" v-for="(tag,i) in tags.results" :key="tag.id" @click.prevent="filterByTag(tag) , addActive(i)">{{tag.name}} <i :class="{'active': index == i}" class="icon icon-checked"></i></div>
           </carousel>
         </div>
