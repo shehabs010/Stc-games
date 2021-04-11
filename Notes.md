@@ -29,6 +29,6 @@
     3- Most Recommend section
 
 
-### I hope You enjoy with what i did and i excuted to hear your feedback
+### I hope You enjoy with what i did and i excited about to hear your feedback
 ### THANK YOU 
 
