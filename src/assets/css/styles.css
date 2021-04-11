@@ -336,7 +336,7 @@ this is font family for the
 .header__section .header__section--search .header__section--search-popup .auto-complete-list {
   border-top: 1px solid;
   padding-top: 25px;
-  height: 250px;
+  height: 325px;
   overflow-y: auto;
   overflow-x: hidden;
 }
