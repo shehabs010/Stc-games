@@ -1,4 +1,4 @@
-### Name of done Features by Pages
+### Name of done Features Points by Pages
 
 # Home =>
 
@@ -11,10 +11,10 @@
      4- Features Section => i made it change its data randomly
      5- Most Recommendation section # Note 
         [
-            See All Link redirect you to Listing page i create it  
+            See All-  Link redirect you to Listing page i create it  
         ]
 
-     6- Most Popular the same behviour like perv section
+     6- Most Popular - the same behviour like perv section
 
 # List =>
     
