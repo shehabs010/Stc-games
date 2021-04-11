@@ -1,0 +1,57 @@
+html,body{
+    font-family: 'Tajawal';
+    background-color: $backgroundHome;
+}
+.button-more{
+    font-size: 20px;
+    background: $color_icon;
+    color: $white !important;
+    text-transform: uppercase;
+    @include transition(all , ease-in-out , 0.3s);
+    &:hover{
+        background:rgba(87 ,37 ,137 , 0.89) ;
+        color: $white;
+    }
+}
+.white__bg{
+    background: $white;
+}
+//1024px 
+@media (min-width: $grid__lg* 1px){
+    .col-xl-20{
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+        .most__recommend--list-item_image{
+            width: 200px;
+            height: 210px;
+            margin: auto;
+    }
+}
+    #game-list{
+        .col-xl-20{
+            flex: 0 0 20% !important;
+            max-width: 20% !important;
+            .most__recommend--list-item_image {
+            width: 200px !important;
+            height: 200px !important;
+        }
+       
+    }
+    
+   
+}
+}
+@media (max-width:$grid__sm *1px) {
+    .most__recommend .most__recommend--title{
+        h4{
+            font-size:16px;
+        }
+    } 
+}
+@media (min-width:($grid__sm * 1) +1px) and (max-width:$grid__lg *1px) {
+    .features__games .features__games--bg{
+        .white__bg{
+            padding: 1.3rem;
+        }
+    }
+}

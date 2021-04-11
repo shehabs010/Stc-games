@@ -1,0 +1,71 @@
+/**
+ * 
+ * Functions
+ *
+ */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+  // How to use it => for example
+  //.box { @include border-radius(10px); }
+  
+  
+  @mixin transition($type , $effect , $sec) {
+    -webkit-transition: $type $effect $sec;
+       -moz-transition: $type $effect $sec;
+        -ms-transition: $type $effect $sec;
+            transition: $type $effect $sec;
+  }
+  // How to use it => for example
+  //@include transition(all , ease-in-out , 0.3s); 
+
+
+
+/**
+ * 
+ * Variables for Responsive media Query
+ *
+ */
+
+// 1201px and more —  Extra large screens, TV
+ $grid__xl:1201;
+ // 1025px — 1200px: Desktops, large screens
+ $grid__lg:1025;
+ // 769px — 1024px: Small screens, laptops
+ $grid__md: 769;
+ // 481px — 768px: iPads, Tablets
+ $grid__sm: 481;
+ // 320px — 480px: Mobile devices
+ $grid__xs: 320;
+
+ $grid__100:100;
+ // counts of columns 
+ $grid__cols: 12;
+ 
+/**
+ * 
+ * Variables for All Colors and backgrounds
+ *
+ */
+$fontColor:#606060;
+$filterLink:#909090;
+$backgroundHome: #f5f5f5;
+$color_icon:#572589;
+$btn__bg:#f8f8f8;
+$btn__border:#d3d3d3;
+$btn__color:#333;
+$btn__border-hover:#c6c6c6;
+$btn__bg--hover:#f0f0f0;
+$btn__box-shadow:rgba(0, 0, 0, 0.1);
+$channel__bg:#f6f6f6;
+$white: #fff;
+$black: #000;
+$textColor: #292a2e;
+$titleColor: #27397c;
+$transition2: all ease-in-out 0.2s;
+$facebook: #3b5998;
+$twitter: #00acee;
+$youtube: #c4302b;

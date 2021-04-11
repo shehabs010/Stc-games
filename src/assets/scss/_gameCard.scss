@@ -1,0 +1,48 @@
+/* ------------------------*\
+ game card scss section  styles
+\* ------------------------*/
+.most__recommend--list-item{
+    position: relative;
+    margin-bottom: 1.5rem;
+    .most__recommend--list-item_image{
+        border-radius: 18px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .list-item_image--rating{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #fff;
+            border-radius: 8px;
+            min-width: 60px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                margin-left: 0.5rem;
+                color:#060606;
+                font-weight: 600;
+            }
+            i{
+                color: $color_icon;
+            }
+        }
+    }
+    .most__recommend--list-item_desc{
+        p{
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0.8rem;
+            color: #444242;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+        }
+    }
+}

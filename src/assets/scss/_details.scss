@@ -1,0 +1,66 @@
+.detail__games--bg {
+    .white__bg{
+        padding: 2rem;
+    }
+  .detail__games--image-wrap {
+    max-height: 320px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .detail__games--description {
+    transition: height ease-in 0.2s;
+    height:213px;
+    overflow: hidden;
+    position: relative;
+    &::after{
+      position: absolute;
+    content: '';
+    bottom: -13px;
+    width: 100%;
+    height: 30px;
+    filter: blur(8px);
+    -webkit-filter: blur(7px);
+    left: 0;
+    background:#fff;
+}
+    &.read-more{
+      height: 100%;
+      &::after{
+        position: relative;
+      }
+    }
+      h2 {
+       
+      font-size: 28px;
+      font-weight: bold;
+      font-family: "Tajawal";
+      text-transform: capitalize;
+       margin-bottom: 0;
+      .slug {
+        display: block;
+        font-size: 19px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+    .detail__games--description-downloads {
+      color: rgba(60, 60, 61, 0.5);
+      font-weight: 600;
+      text-transform: capitalize;
+      display: block;
+    }
+    
+  }
+  .detail__games--description-more{
+      color: $color_icon;
+      font-weight: bold;
+      text-transform: capitalize;
+      &:focus,&:active{
+          box-shadow: none;
+          outline: none;
+          border:0px;
+      }
+  }
+}

@@ -1,0 +1,17 @@
+/* ------------------------*\
+      global scss files 
+\* ------------------------*/
+@import "variables";
+@import "featureGames";
+@import "globalClasses";
+@import "fontIcons";
+/* ------------------------*\
+     Components scss files 
+\* ------------------------*/
+
+@import "header";
+@import "gameCard";
+@import "filterCategory";
+@import "gameCardDetails";
+@import "details";
+@import "lists";

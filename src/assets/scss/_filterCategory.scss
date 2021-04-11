@@ -1,0 +1,43 @@
+
+/* ------------------------*\
+filter scss section styles
+\* ------------------------*/
+.category{
+    background: $white;
+    box-shadow:0px 0px 11px 0.2rem rgba(0, 0, 0,  0.04 );
+    .category__cat--slider{
+        .item{
+            color: #545454;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            border: 1px solid #d2d2d2;
+            background: $white;
+            cursor: pointer;
+            width: max-content;
+            @include transition(all, ease-in-out ,0.3s);
+            &.active{
+                border-color:$color_icon;
+                background:$color_icon;
+                color: $white;
+            }
+            i{
+                display: none;
+                &.active{
+                    display:inline-block;
+                }
+            }
+            &:hover{
+                border-color:$color_icon;
+                background:$color_icon;
+                color: $white;
+            }
+        }
+        .owl-stage-outer{
+            .owl-stage{
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            }
+        }
+    }
+}
