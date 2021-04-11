@@ -3,7 +3,6 @@ import Router from 'vue-router';
 import Home from '@/Views/Home.vue';
 import SearchResult from '@/Views/Search.vue';
 import GameDetails from '@/Views/GameDetails.vue';
-// import Notfound from '@/views/NotFound/404.vue';
 
 Vue.use(Router)
 
@@ -26,14 +25,9 @@ const router = new Router({
             name: 'game',
             component: GameDetails,
         },
-        // {
-        //     path: '/404',
-        //     name: '404',
-        //     component: Notfound
-        // },
         {
             path: '*',
-            redirect: '/404',
+            redirect: '/',
 
         }
     ]
