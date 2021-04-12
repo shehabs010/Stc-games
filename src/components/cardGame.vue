@@ -6,7 +6,7 @@
                       <img v-else :src="game.background_image" alt=""/>
                       <div class="list-item_image--rating">
                         <i class="icon icon-star-rating"></i>
-                        <span>{{game.rating}}</span>
+                        <span v-if="game.rating">{{game.rating}}</span>
                       </div>
                     </div>
                     <div class="most__recommend--list-item_desc">
