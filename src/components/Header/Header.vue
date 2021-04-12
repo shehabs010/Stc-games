@@ -7,7 +7,7 @@
           <div class="row align-items-center">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-6 mr-auto">
               <div class="header__section--logo d-flex">
-                <router-link to="" class="d-block">
+                <router-link to="/" class="d-block">
                   <img
                     class="img-fluid"
                     src="../../assets/img/logo.svg"
