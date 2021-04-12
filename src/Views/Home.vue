@@ -67,7 +67,7 @@
           </div>
         </div>
       </section>
-<game-list v-if="this.tagGames && this.tagGames.length>0" :tagBgImg="tagBgImg" :catFilterFlag="true" :recent-games="this.tagGames" :start="'0'" :end="'5'" :listName="'Category Filter'"></game-list>
+<game-list v-if="this.tagGames && this.tagGames.length>0 && this.index != null" :tagBgImg="tagBgImg" :catFilterFlag="true" :recent-games="this.tagGames" :start="'0'" :end="'5'" :listName="'Category Filter'"></game-list>
 
 <game-list :recent-games="this.$store.state.SearchResultData.results" :start="'13'" :end="'18'" :listName="'Most Recommendation'"></game-list>
 <game-list :recent-games="this.$store.state.SearchResultData.results" :start="'15'" :end="'20'" :listName="'Most Popular'"></game-list>
@@ -118,7 +118,11 @@ export default {
       }
     },
     addActive(i){
-      this.index = i
+      if(this.index == i){
+        this.index =null;
+      }else{
+        this.index = i
+      }
     }
   },
   computed:{
