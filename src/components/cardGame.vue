@@ -4,9 +4,9 @@
                     <div class="most__recommend--list-item_image">
                       <img v-if="flag" :src="bgImage" alt=""/>
                       <img v-else :src="game.background_image" alt=""/>
-                      <div class="list-item_image--rating">
+                      <div class="list-item_image--rating" v-if="game.rating">
                         <i class="icon icon-star-rating"></i>
-                        <span v-if="game.rating">{{game.rating}}</span>
+                        <span>{{game.rating}}</span>
                       </div>
                     </div>
                     <div class="most__recommend--list-item_desc">

@@ -28,8 +28,8 @@
                     <div v-html="pageData.description"></div>
                   </div>
                   <video width="100%" v-if="pageData && pageData.clip" :poster="pageData.clip.preview" controls>
-                    <source v-if="pageData && pageData.clip" :src="pageData.clip.clips.full" type="video/mp4" />
-                    <source v-if="pageData && pageData.clip" :src="pageData.clip.clips.full" type="video/ogg" />
+                    <source v-if="pageData && pageData.clip && pageData.clips" :src="pageData.clip.clips.full" type="video/mp4" />
+                    <source v-if="pageData && pageData.clip && pageData.clips" :src="pageData.clip.clips.full" type="video/ogg" />
                    
                   </video>
 
