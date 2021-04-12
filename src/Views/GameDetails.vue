@@ -27,9 +27,9 @@
                   <div class="detail__games--description-text">
                     <div v-html="pageData.description"></div>
                   </div>
-                  <video width="100%" controls>
-                    <source :src="pageData.clip.clips.full" type="video/mp4" />
-                    <source :src="pageData.clip.clips.full" type="video/ogg" />
+                  <video width="100%" v-if="pageData && pageData.clip" :poster="pageData.clip.preview" controls>
+                    <source v-if="pageData && pageData.clip" :src="pageData.clip.clips.full" type="video/mp4" />
+                    <source v-if="pageData && pageData.clip" :src="pageData.clip.clips.full" type="video/ogg" />
                    
                   </video>
 
