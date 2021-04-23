@@ -15,4 +15,4 @@ export const getTags = () => http.get(`${domain}/tags?key=efc6929f54b0472993f5e6
 export const gotoNextPages = nextPageToken => http.get(`${nextPageToken}`);
 
 // this request take item id to get Item details
-export const getGameDetails = id => http.get(`${domain}/games/${id}`);
+export const getGameDetails = id => http.get(`${domain}/games/${id}?key=efc6929f54b0472993f5e6f517794d4e`);
