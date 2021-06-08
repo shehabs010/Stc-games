@@ -20,7 +20,7 @@
               <div class="header__section--search d-flex justify-content-end">
                  <a href="#" @click.prevent="show()" class="mr-4"><i class="icon icon-search"></i></a>
                <Search  :open.sync="open"/>
-                <a href="#"><i class="icon icon-points"></i></a>
+                <!-- <a href="#"><i class="icon icon-points"></i></a> -->
                 
               </div>
             </div>
